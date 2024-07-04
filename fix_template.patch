@@ -1,0 +1,22 @@
+diff --git a/templates/injection.class.tpl b/templates/injection.class.tpl
+index 33861cb..9e1c0dd 100644
+--- a/templates/injection.class.tpl
++++ b/templates/injection.class.tpl
+@@ -12,16 +12,7 @@ class %%CLASSNAME%%Injection extends %%CLASSNAME%% implements PluginDatainjectio
+      * @return string
+     **/
+     static function getTable($classname = null) {
+-        if ($classname === null) {
+-            return '';
+-        }
+-        $parent_class = get_parent_class($classname);
+-
+-        if ($parent_class === false) {
+-            return '';
+-        }
+-
+-        return getTableForItemType($parent_class);
++        return getTableForItemType(get_parent_class());
+     }
+ 
+     static function getTypeName($nb = 0) {
