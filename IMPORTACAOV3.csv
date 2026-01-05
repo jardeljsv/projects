@@ -1,5 +1,5 @@
-ID;Título;Entidade;Status;Requerente - Requerente;Atribuído - Grupo Técnico;Categoria;Descrição
-1;Sistemas | ERP - SINQIA (29390);6;2;10;3;225;"DADOS DO FORMULÁRIO
+Título;Entidade;Status;Requerente - Requerente;Atribuído - Grupo Técnico;Categoria;Descrição
+Sistemas | ERP - SINQIA (29390);6;2;10;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -11,7 +11,7 @@ SISTEMAS - ??
 Cadastro de faturamento da empresa com valor alto interfere na hora de realizar o desembolso no EM. Para desembolsar tenho que informar valor incorreto e menor no faturamento para conseguir seguir com o desembolso.
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-2;Sistemas | ERP - SINQIA (25407);28;4;51;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (25407);28;4;51;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -25,7 +25,7 @@ Prezados
 Realização de lançamento múltiplo com inclusão manual do nº do lote, porém o sistema está mudando o nº do lote informado.
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-3;Sistemas | ERP - SINQIA (32663);28;4;51;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (32663);28;4;51;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -39,7 +39,7 @@ Prezados
 Para entrega da ECD (Sped Contábil), precisamos parametrizar a tela de Relacionamento COSIF x Conta Referencial (RFB), precisamos de apoio do time de TI para efetuar os parâmetros sendo que não aparece nenhuma informação nesta tela.
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-4;Sistemas | ERP - SINQIA (32647);28;4;51;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (32647);28;4;51;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -56,7 +56,7 @@ Trata-se de Regulatório com a finalidade de demonstrar a ''apuração'' do IBS e d
 Em anexo layout publicado no site do Sistema Público de Escrituração Digital - Sped
 
 5) ANEXO - ?? : Documento anexado"
-5;Sistemas | ERP - SINQIA (31594);10;4;9;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (31594);10;4;9;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -68,7 +68,7 @@ SISTEMAS - ??
 Reorganização da esteira de aprovação em comite para inclusão do comite China após comitê Brasil, ambos sem contabilizar tempo de análise.
 
 6) ANEXO - ?? : Nenhum documento anexado"
-6;Sistemas | ERP - SINQIA (30119);10;4;9;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (30119);10;4;9;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -80,7 +80,7 @@ SISTEMAS - ??
 Verificar a possibilidade de incluir na esteira de crédito a identificação de clientes inadimplentes quando forem solicitadas novas propostas dos mesmo, tendo um status de ''Parcela Vencida'' para uma análise mais aprofundada.
 
 6) ANEXO - ?? : Nenhum documento anexado"
-7;Infraestrutura | E-mail (32593);6;2;35;1;252;"DADOS DO FORMULÁRIO
+Infraestrutura | E-mail (32593);6;2;35;1;252;"DADOS DO FORMULÁRIO
 
 INFRAESTRUTURA - ????
 
@@ -98,7 +98,7 @@ SOLICITO RELATORIO DO SAC, FALE CONOSCO PARA PLATAFORMA GOTO.
 DESDE JÁ AGRADEÇO!
 
 5) ANEXO - ?? : Nenhum documento anexado"
-8;Equipamentos | Desktop/Laptop/Monitor (31612);17;4;25;1;249;"DADOS DO FORMULÁRIO
+Equipamentos | Desktop/Laptop/Monitor (31612);17;4;25;1;249;"DADOS DO FORMULÁRIO
 
 EQUIPAMENTOS - ??
 
@@ -112,7 +112,7 @@ peço a gentileza de programarem a troca do laptop que sendo utilizado pela colab
 Motivo: falta de teclas.
 
 4) EVIDÊNCIA(S) - ?? : Documento anexado"
-9;Sistemas | ERP - SINQIA (31257);28;4;11;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (31257);28;4;11;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -134,7 +134,7 @@ Desde já agradeço.
 Abraços
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-10;Sistemas | ERP - SINQIA (32580);33;2;22;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (32580);33;2;22;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -150,7 +150,7 @@ Realizar consulta base de dados com as seguintes informações:
 --CONTRATOS AMARRADOS AO CNPJ, Valor financiado do contrato, prazo do contratos, se tiver carência prazo somado.
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-11;Sistemas | ERP - SINQIA (32547);32;4;34;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (32547);32;4;34;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -162,7 +162,7 @@ SISTEMAS - ??
 Problemas para a criação de documento 8015 quando a data base está em branco.
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-12;Sistemas | ERP - SINQIA (31833);10;2;33;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (31833);10;2;33;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -182,7 +182,7 @@ Peço a gentileza de investigar o ocorrido, bem como solicitar a Sinqia a correçã
 Obrigado.
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-13;Sistemas | ERP - SINQIA (27609);28;4;51;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (27609);28;4;51;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -222,7 +222,7 @@ Por favor verificar.
  
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-14;Sistemas | ERP - SINQIA (cópia de 3) (31239);28;4;11;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (cópia de 3) (31239);28;4;11;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -241,7 +241,7 @@ Por ultimo, solicito a gentileza de incluir uma coluna de ''Carteira'' para iden
 Desde já agradeço.
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-15;Sistemas | ERP - SINQIA (30369);16;4;36;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (30369);16;4;36;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -257,7 +257,7 @@ Precisamos de um ajuste na esteira do portal de crédito, onde a área de complian
 Obrigada. 
 
 6) ANEXO - ?? : Nenhum documento anexado"
-16;Sistemas | ERP - SINQIA (31548);6;4;10;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (31548);6;4;10;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -279,7 +279,7 @@ Agradeço desde já e permaneço à disposição.
  
 
 6) ANEXO - ?? : Nenhum documento anexado"
-17;Sistemas | ERP - SINQIA (32341);6;4;10;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (32341);6;4;10;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -303,7 +303,7 @@ Desde já agradeço.
  
 
 6) ANEXO - ?? : Documento anexado"
-18;Sistemas | ERP - SINQIA (28221);7;4;30;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (28221);7;4;30;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -315,7 +315,7 @@ SISTEMAS - ??
 Meninos, pensando em aderir os Boletos Híbridos a Diretoria solicitou que levantássemos todos os pontos para uma possível implementação, sendo assim que que analise o e-mail em anexo para que possamos verificar  se haverá alguma intervenção da SINQUIA nesse processo.
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-19;Sistemas | ERP - SINQIA (31582);28;4;11;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (31582);28;4;11;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -331,7 +331,7 @@ Conseguem verificar se houve algum problema sistêmico, por gentileza?
 Desde já agradeço
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-20;Sistemas | ERP - SINQIA (cópia de 2) (31238);28;4;11;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (cópia de 2) (31238);28;4;11;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -350,7 +350,7 @@ Por ultimo, solicito a gentileza de incluir uma coluna de ''Carteira'' para iden
 Desde já agradeço.
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-21;Sistemas | ERP - SINQIA (29983);28;4;51;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (29983);28;4;51;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -368,7 +368,7 @@ Em anexo novo layout para declaração das notas recebidas de Prestadores estabele
 Precisamos adequar nosso sistema.
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-22;Sistemas | ERP - SINQIA (26292);28;4;37;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (26292);28;4;37;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -379,7 +379,7 @@ SISTEMAS - ??
 Habilitar a colagem do número de conta contábil, no campo ''conta contábil'' da tela de cadastro da conciliação físico x contábil, pois, atualmente precisamos pesquisar o número da conta na tela seguinte, demandando muito tempo.
 
 5) ANEXO - ?? : Documento anexado"
-23;Sistemas | ERP - SINQIA (25147);28;4;51;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (25147);28;4;51;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -403,7 +403,7 @@ Por favor verificar com o time da Sinqia qual o menu atual para geração do relat
  
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-24;Sistemas | ERP - SINQIA (30232);28;4;11;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (30232);28;4;11;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -419,7 +419,7 @@ Olá pessoal, solicito a gentileza de seu apoio em verificar com a Sinqia o motiv
 Desde já agradeço.
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-25;Sistemas | ERP - SINQIA (30649);6;4;10;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (30649);6;4;10;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -433,7 +433,7 @@ Consta em nossa base cadastral (CD e FO) o cadastro da Extra Máquinas Sao Paulo,
 Obrigada
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-26;SD-219124 4966 - CO ILG - DESIF - Novos Códigos (20210);28;4;51;3;225;"DADOS DO FORMULÁRIO
+SD-219124 4966 - CO ILG - DESIF - Novos Códigos (20210);28;4;51;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -457,7 +457,7 @@ Por favor adequar o sistema para envio da Declaração  (prazo legal em 10/02/2025
  
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado "
-27;Sistemas | ERP - SINQIA (27588);28;4;11;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (27588);28;4;11;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -475,7 +475,7 @@ Obs.: Foi solicitado pelo time de tecnologia que testássemos este relatório.
 [c71f22f1-8752cc2f-688a10f6805d04.47580701]
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-28;Sistemas | ERP - SINQIA (cópia de 4) (31240);28;4;11;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (cópia de 4) (31240);28;4;11;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -494,7 +494,7 @@ Por ultimo, solicito a gentileza de incluir uma coluna de ''Carteira'' para iden
 Desde já agradeço.
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-29;Sistemas | ERP - SINQIA (31231);28;4;11;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (31231);28;4;11;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -510,7 +510,7 @@ Solicito a gentileza de nos apoiar para entender a disparidade entre os valores 
 Desde já agradeço e me coloca a disposição em caso de dúvidas.
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-30;Sistemas | ERP - SINQIA (28829);10;2;33;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (28829);10;2;33;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -526,7 +526,7 @@ Peço a gentileza de verificar o ''relatório 3040 [4966]'', pois no campo de clas
 Obrigado.
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-31;Sistemas | ERP - SINQIA (23826);28;4;51;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (23826);28;4;51;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -546,7 +546,7 @@ Em anexo Apuração anterior contendo todas as informações relativas a apuração.
  
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-32;Sistemas | ERP - SINQIA (21467);28;4;51;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (21467);28;4;51;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -574,7 +574,7 @@ Anteriormente aberto o chamado 12126 solicitando o pgto através do cód. de barra
  
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-33;Sistemas | ERP - SINQIA (30860);28;2;11;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (30860);28;2;11;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -593,7 +593,7 @@ Por ultimo, solicito a gentileza de incluir uma coluna de ''Carteira'' para iden
 Desde já agradeço.
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-34;Sistemas | ERP - SINQIA (28825);6;4;35;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (28825);6;4;35;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -611,7 +611,7 @@ Desde já agradeço!
  
 
 6) ANEXO - ?? : Documento anexado"
-35;Sistemas | ERP - SINQIA (30284);7;4;30;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (30284);7;4;30;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -637,7 +637,7 @@ Ficamos à disposição para detalhar os casos de uso e apoiar nos testes, se neces
  
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-36;Sistemas | ERP - SINQIA (29982);28;4;51;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (29982);28;4;51;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -673,7 +673,7 @@ O sistema ainda está sendo migrado, segundo a Prefeitura a previsão de conclusão
  
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-37;Sistemas | ERP - SINQIA (25381);33;4;41;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (25381);33;4;41;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -687,7 +687,7 @@ Inserimos o valor de taxa referencial em uma das nossas operações no dia 28/03, 
 Gostariamos apenas de solicitar a revisão do cálculo, pois conforme o time de produtos vem calculando a taxa referencial, estamos tendo algumas divergências nas casas decimais e as vezes em até 2 pontos. 
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-38;Sistemas | ERP - SINQIA (28991);7;2;30;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (28991);7;2;30;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -709,7 +709,7 @@ estou enviado por anexo a atualização da esteira de cobrança para que vcs possam
  		3 Dias de atraso
 
 6) ANEXO - ?? : Documento anexado"
-39;Sistemas | ERP - SINQIA (29656);8;4;48;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (29656);8;4;48;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -725,7 +725,7 @@ Gostariamos de entender qual a lógica e de onde buscam as informações para gerar
 Obrigado![c71f22f1-8752cc2f-68dd33537c2ea5.72745688]
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-40;Gestão de Acessos | Usuário - AD (29265);33;4;22;2;67;"DADOS DO FORMULÁRIO
+Gestão de Acessos | Usuário - AD (29265);33;4;22;2;67;"DADOS DO FORMULÁRIO
 
 GESTÃO DE ACESSOS - ????
 
@@ -736,7 +736,7 @@ GESTÃO DE ACESSOS - ????
 Solicito a revogação dos acessos do ex colaborador Andy Chin Hong Wang.
 
 5) ANEXO - ?? : Nenhum documento anexado"
-41;EM - Pagamento do Rebate para mais de um Beneficiário (29360);33;4;41;3;225;"Dados do formulário
+EM - Pagamento do Rebate para mais de um Beneficiário (29360);33;4;41;3;225;"Dados do formulário
 
 SISTEMAS - ??
 
@@ -758,14 +758,14 @@ Exemplo: taxa desejada de 0,99% em 24 meses - rebate necessário de 8,5% 
 - Dealer acararia com a diferença de 6,5% (desontado)
 
 6) ANEXO - ?? : Nenhum documento anexado"
-42;Cálculos do FGC Contribuições (29275);28;2;11;3;225;"boa tarde!
+Cálculos do FGC Contribuições (29275);28;2;11;3;225;"boa tarde!
 
 Conforme falamos a 4 semanas atrás, homologamos a versão aplicada 22.2 sobre a correção do chamado antigo Out/22 (print anexo), o sistema gera incorretamente os valores do FGC contribuições.
 
 Seria esperado esta data base de Out/23 gerar corretamente, (segue evidência da geração valores errado e valores que deveriam trazer corretamente), incluído a regra do FGC Contribuições.
 
 A disposição"
-43;Sistemas | ERP - SINQIA (27795);7;4;47;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (27795);7;4;47;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -781,7 +781,7 @@ O relatório posição de contratos está apresentando informações em duplicidade, c
 Desde já, agradeço. 
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-44;Alteração da nomenclatura: CONGLOMERADO ECONOMICO (9408);6;4;10;3;225;"DADOS DO FORMULÁRIO
+Alteração da nomenclatura: CONGLOMERADO ECONOMICO (9408);6;4;10;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -803,14 +803,14 @@ At.te,
  
 
 6) ANEXO - ?? : Documento anexado "
-45;NFTS - Nota Fiscal do Tomador do Serviços São Paulo (11055);28;4;51;3;225;"Bom dia,
+NFTS - Nota Fiscal do Tomador do Serviços São Paulo (11055);28;4;51;3;225;"Bom dia,
 
 O Banco XCMG está abrindo uma nova filial na cidade de São Paulo, com isso teremos que entregar o regulatório NFTS.
 
 O sistema nos atende com está demanda para gerar o regulatório ?
 
 em anexo o leiaute da NFTS."
-46;Sistemas | ERP - SINQIA (28897);28;2;11;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (28897);28;2;11;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -822,7 +822,7 @@ SISTEMAS - ??
 Solicito a gentileza de seu apoio com o erro apontado no processo de homologação do COILG.
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-47;Sistemas | ERP - SINQIA (23815);29;4;40;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (23815);29;4;40;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -844,7 +844,7 @@ Fico a disposição.
 Obrigada
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-48;Infraestrutura | Arquivos Corporativos (28953);10;4;9;1;151;"DADOS DO FORMULÁRIO
+Infraestrutura | Arquivos Corporativos (28953);10;4;9;1;151;"DADOS DO FORMULÁRIO
 
 INFRAESTRUTURA - ????
 
@@ -860,7 +860,7 @@ Os arquivos emitidos CIP ao serem colocados na pasta para envio não estão sendo 
 M:\Centro Financeiro\Credito\Area Comum\CIP\CadastroPositivo\ENVIO
 
 6) ANEXO - ?? : Documento anexado"
-49;Softwares | Comunicadores(Skype, Wechat, Teams) (28000);5;4;46;1;197;"DADOS DO FORMULÁRIO
+Softwares | Comunicadores(Skype, Wechat, Teams) (28000);5;4;46;1;197;"DADOS DO FORMULÁRIO
 
 SOFTWARES - ??
 
@@ -881,7 +881,7 @@ Daniel Anisio Alves - XC05L0017
 Obrigada.
 
 5) ANEXO - ?? : Documento anexado"
-50;Equipamentos | Desktop/Laptop/Monitor (28692);17;4;44;1;249;"DADOS DO FORMULÁRIO
+Equipamentos | Desktop/Laptop/Monitor (28692);17;4;44;1;249;"DADOS DO FORMULÁRIO
 
 EQUIPAMENTOS - ??
 
@@ -895,7 +895,7 @@ Solicito, por gentileza, a substituição do laptop em razão de defeito identifica
 Obrigada!
 
 4) EVIDÊNCIA(S) - ?? : Documento anexado"
-51;Softwares | Outros (28942);25;2;42;1;206;"DADOS DO FORMULÁRIO
+Softwares | Outros (28942);25;2;42;1;206;"DADOS DO FORMULÁRIO
 
 SOFTWARES - ??
 
@@ -908,7 +908,7 @@ SOFTWARES - ??
 Relatório que possa identificar o tempo de esteira, segmento por processo / departamento, de cada proposta enviada através da Sinqia
 
 7) ANEXO - ?? : Nenhum documento anexado"
-52;Softwares | Outros (28824);28;2;11;1;205;"DADOS DO FORMULÁRIO
+Softwares | Outros (28824);28;2;11;1;205;"DADOS DO FORMULÁRIO
 
 SOFTWARES - ??
 
@@ -921,7 +921,7 @@ SOFTWARES - ??
 SOlicito a gentileza de seu apoio em instalar o pdf creator em minha máquina para preparo e envio do CADOC 9010. Obrigada
 
 7) ANEXO - ?? : Nenhum documento anexado"
-53;CHANGE - Controle do Limite Operacional de 30% do Patrimônio de Referência (PR) (2905);16;4;36;3;175;"SISTEMAS - ??
+CHANGE - Controle do Limite Operacional de 30% do Patrimônio de Referência (PR) (2905);16;4;36;3;175;"SISTEMAS - ??
 
 1) SELECIONE O SISTEMA - ???? : ERP - CHANGE - ?????? - CHANGE 
 2) SELECIONE A OPÇÃO DESEJADA - ??????? : Melhoria - ?? 
@@ -942,7 +942,7 @@ Atenciosamente, 
  
 
 5) EVIDÊNCIA(S) - ?? : Documento anexado "
-54;Sistemas | ERP - SINQIA (27510);16;4;36;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (27510);16;4;36;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -963,7 +963,7 @@ Obrigada,
 Flávia M. 
 
 6) ANEXO - ?? : Nenhum documento anexado"
-55;Sistemas | ERP - SINQIA (28674);7;4;30;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (28674);7;4;30;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -977,7 +977,7 @@ PESSOAL,
 Poderiam, por gentileza, verificar a possibilidade de configurar o CONTAS A RECEBER para que as baixas de juros sejam realizadas AUTOMATICAMENTE sempre que o valor for ZERO REAIS?
 
 6) ANEXO - ?? : Nenhum documento anexado"
-56;Ataque Pix (28644);8;4;48;3;225;"Bom dia!
+Ataque Pix (28644);8;4;48;3;225;"Bom dia!
 
 Espero que estejam bem.
 
@@ -986,7 +986,7 @@ Conforme comunicado enviado pelo Marcius no sábado sobre o ataque no ambiente PI
  
 
 Obrigado!"
-57;GM - Liberação de acesso WhatsApp - Claudete Bejo (27981);5;4;46;3;205;"DADOS DO FORMULÁRIO
+GM - Liberação de acesso WhatsApp - Claudete Bejo (27981);5;4;46;3;205;"DADOS DO FORMULÁRIO
 
 SOFTWARES - ??
 
@@ -999,8 +999,8 @@ SOFTWARES - ??
 O Departamento Comercial, recebe grandes volumes de documentos de clientes e vendedores pelo whats app corporativo e não temos como baixar.
 
 7) ANEXO - ?? : Documento anexado "
-58;SD-142185 XCMG - BNDES - Valor Total do Contrato com Juros futuros não ok no Bndes (11897);6;4;35;3;225;Este item foi aberto pelo Danilo evidenciando que no CDC pós fixado, tanto no FO quanto no EM aparece o valor dos juros futuros no campo de Valor Total, mas isto nao ocorre no produto Bndes. Eles precisam desta informação porque a mesma aparece em suas minutas (CCB). No caso do Bndes, neste campo aparece o Total financiado e não o valor futuro com juros.
-59;Sistemas | ERP - SINQIA (24778);6;4;10;3;225;"DADOS DO FORMULÁRIO
+SD-142185 XCMG - BNDES - Valor Total do Contrato com Juros futuros não ok no Bndes (11897);6;4;35;3;225;Este item foi aberto pelo Danilo evidenciando que no CDC pós fixado, tanto no FO quanto no EM aparece o valor dos juros futuros no campo de Valor Total, mas isto nao ocorre no produto Bndes. Eles precisam desta informação porque a mesma aparece em suas minutas (CCB). No caso do Bndes, neste campo aparece o Total financiado e não o valor futuro com juros.
+Sistemas | ERP - SINQIA (24778);6;4;10;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -1014,7 +1014,7 @@ Cadastro do cliente SANTIN EQUIP. - Cód. 605-0 (no momento está sem contrato ati
 Favor validar.
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-60;Sistemas | ERP - SINQIA (23709);33;4;22;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (23709);33;4;22;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -1034,7 +1034,7 @@ https://apis-h.bndes.gov.br/store/
 https://www.bndes.gov.br/SiteBNDES/bndes/bndes_pt/Galerias/Convivencia/Moedas_Contratuais/index.html
 
 6) ANEXO - ?? : Nenhum documento anexado"
-61;Sistemas | ERP - SINQIA (18183);28;4;51;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (18183);28;4;51;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -1052,7 +1052,7 @@ Atualmente conseguimos visualizar os contratos lançados para Prejuízo no Relatór
 A partir de Janeiro/2025 teremos novas regras e gostaríamos de saber como o sistema irá se comportar.
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-62;Sistemas | ERP - SINQIA (15511);10;4;45;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (15511);10;4;45;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -1066,7 +1066,7 @@ Solicitamos que seja criada uma esteira para as operações de Carta de Fiança.
 Temos que ter registrado o inicio, aprovação e formalização da operação dentro do sistema.
 
 6) ANEXO - ?? : Nenhum documento anexado"
-63;Exclusão de NF após integrar proposta no EM (2863);6;4;10;3;225;"SISTEMAS - ??
+Exclusão de NF após integrar proposta no EM (2863);6;4;10;3;225;"SISTEMAS - ??
 
 1) SELECIONE O SISTEMA - ???? : ERP - SINQIA - ?????? - SINQIA
 2) SELECIONE A OPÇÃO DESEJADA - ??????? : EM - Crédito - EM - ??
@@ -1086,10 +1086,10 @@ Sigo a disposição!
  
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-64;EM - Desembolsos em 29, 30 e 31 de Janeiro (4782);25;4;42;3;225;"Atualmente quando realizamos desembolsos nos dias 29, 30 e 31 de Janeiro, todos as parcelas têm seus respectivos vencimentos antecipados para o dia 28 de cada mês.
+EM - Desembolsos em 29, 30 e 31 de Janeiro (4782);25;4;42;3;225;"Atualmente quando realizamos desembolsos nos dias 29, 30 e 31 de Janeiro, todos as parcelas têm seus respectivos vencimentos antecipados para o dia 28 de cada mês.
 
 Tendo em vista de que isso gera perda financeira para o banco de acordo com a quantidade de dias que são alterados, precisamos que o sistema seja capaz de levar a consideração da data do desembolso para os cálculos dos vencimentos e que todos os valores da proposta original se mantenham."
-65;Gestão de Acessos | ERP - B3 - SNG (25366);10;4;9;3;107;"DADOS DO FORMULÁRIO
+Gestão de Acessos | ERP - B3 - SNG (25366);10;4;9;3;107;"DADOS DO FORMULÁRIO
 
 GESTÃO DE ACESSOS - ????
 
@@ -1101,7 +1101,7 @@ Bom dia, 
 Gostaria de solicitar acesso ao sistema B3-SNG
 
 4) ANEXO - ?? : Nenhum documento anexado"
-66;Sistemas | ERP - SINQIA (26876);28;4;37;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (26876);28;4;37;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -1125,7 +1125,7 @@ O caminho no app :
 [c71f22f1-8752cc2f-68765aac642330.87361344]
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-67;FO - Tipo de Sócio Acionista Administradores (11654);6;4;10;3;225;"DADOS DO FORMULÁRIO
+FO - Tipo de Sócio Acionista Administradores (11654);6;4;10;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -1143,7 +1143,7 @@ Com esse novo TIPO de descrição conseguiremos incluir o devedor solidário que pa
 Desde já agradeço e sigo a disposição para qualquer esclarecimento.
 
 6) ANEXO - ?? : Documento anexado "
-68;Sistemas | ERP - SINQIA (26417);6;4;10;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (26417);6;4;10;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -1163,7 +1163,7 @@ Segue o print da tela no FO que é preenchido a informação:
 Obrigada.
 
 6) ANEXO - ?? : Documento anexado"
-69;Sistemas | ERP - SINQIA (26357);10;2;33;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (26357);10;2;33;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -1179,7 +1179,7 @@ Pedimos a gentileza de verificar o relatório do 3040, os valores de saldo diverg
 No aguardo.
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-70;Sistemas | ERP - SINQIA (25452);33;4;41;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (25452);33;4;41;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -1195,7 +1195,7 @@ Necessário o desenvolvimento de um campo para disponibilizarmos o spread das ope
 Estamos disponibilizando uma planilha com o modo de cálculo. 
 
 6) ANEXO - ?? : Documento anexado"
-71;Sistemas | ERP - SINQIA (25990);32;4;34;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (25990);32;4;34;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -1207,7 +1207,7 @@ SISTEMAS - ??
 Necessitamos entender e fazer teste de produtos como futuro e swap de moedas para gerar e simular o risco de mercado de algumas operações e entender o seu impacto em nossa carteira. 
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-72;Sistemas | ERP - SINQIA (25461);7;2;30;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (25461);7;2;30;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -1219,7 +1219,7 @@ SISTEMAS - ??
 Meninos, poderiam por gentileza verifica o Indicador de Inadimplência Power Bi  no mes de Fevereiro os dias de atraso estão 5 dias a mais de vencimento que o correto, porem olhando o indicador de hoje Junho, os dias estão corretos. Poderiam verificar o que aconteceu para que em Fevereiro os dias estivessem incorretos?
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-73;Softwares | Outros (24819);32;2;34;1;210;"DADOS DO FORMULÁRIO
+Softwares | Outros (24819);32;2;34;1;210;"DADOS DO FORMULÁRIO
 
 SOFTWARES - ??
 
@@ -1236,7 +1236,7 @@ Necessitamos verificar os nossos relatórios que estão fora do ar devido a mudanç
 Fico a disposição 
 
 7) ANEXO - ?? : Documento anexado"
-74;Sistemas | ERP - SINQIA (7023);8;4;48;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (7023);8;4;48;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -1260,7 +1260,7 @@ Sugiro marcamos uma reunião para alinharmos a necessidade.
 Obrigado
 
 6) ANEXO - ?? : Nenhum documento anexado"
-75;Sistemas | ERP - SINQIA (23970);28;4;51;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (23970);28;4;51;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -1284,7 +1284,7 @@ Continua apresentado erros como:
 Já aberto chamado interno na Sinqia, em anexo email de TI, formalizando o problema do arquivo.
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-76;Equipamentos | Desktop/Laptop/Monitor (24075);7;4;30;3;49;"DADOS DO FORMULÁRIO
+Equipamentos | Desktop/Laptop/Monitor (24075);7;4;30;3;49;"DADOS DO FORMULÁRIO
 
 EQUIPAMENTOS - ??
 
@@ -1297,7 +1297,7 @@ EQUIPAMENTOS - ??
 Meninos, meu notebook está lento  e travando poderiam analisar por favor
 
 7) ANEXO - ?? : Documento anexado"
-77;Esteira de crédito - propostas com aprovação (11233);10;4;33;3;225;"DADOS DO FORMULÁRIO
+Esteira de crédito - propostas com aprovação (11233);10;4;33;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -1315,10 +1315,10 @@ O objetivo é otimizar tempo de análise das propostas, bem como minimizar o retra
 Ficamos no aguardo e agradecemos o suporte.
 
 6) ANEXO - ?? : Nenhum documento anexado "
-78;CP CDP - Release Cadastro Positivo - Fase 2 (11048);10;4;33;3;225;"Conforme material enviado pela NUCLEA, o cadastro positivo terá novas alterações de remessas.
+CP CDP - Release Cadastro Positivo - Fase 2 (11048);10;4;33;3;225;"Conforme material enviado pela NUCLEA, o cadastro positivo terá novas alterações de remessas.
 
 [c71f22f1-8752cc2f-65a9a15a73f923.70426553]"
-79;Campo TAC ISENTO (1395);6;4;35;3;225;"SISTEMAS - ??
+Campo TAC ISENTO (1395);6;4;35;3;225;"SISTEMAS - ??
 
 1) SELECIONE O SISTEMA - ???? : ERP - SINQIA - ?????? - SINQIA
 2) SELECIONE A OPÇÃO DESEJADA - ??????? : FO - Portal de Crédito - FO - ????
@@ -1336,7 +1336,7 @@ Desde já agradeço!
  
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-80;Sistemas | ERP - SINQIA (11135);28;4;51;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (11135);28;4;51;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -1356,7 +1356,7 @@ Por favor verificar o ocorrido.
 Em anexo tela de evidência extraída do TE.
 
 6) ANEXO - ?? : Documento anexado"
-81;Lentidão do Sistema (6437);6;4;10;3;225;"SISTEMAS - ??
+Lentidão do Sistema (6437);6;4;10;3;225;"SISTEMAS - ??
 
 1) SELECIONE O SISTEMA - ???? : ERP - SINQIA - ?????? - SINQIA
 2) SELECIONE A OPÇÃO DESEJADA - ??????? : FO - Portal de Crédito - FO - ????
@@ -1375,7 +1375,7 @@ Gentileza verificar o cliente S.Lopes Sandim.
 Obrigada!
 
 5) ANEXO - ?? : Nenhum documento anexado"
-82;CO - IRPJ/CSLL - Parametrização de Dedução (18240);28;4;51;3;225;"DADOS DO FORMULÁRIO
+CO - IRPJ/CSLL - Parametrização de Dedução (18240);28;4;51;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -1395,7 +1395,7 @@ Por gentileza corrigir
 At.te
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado "
-83;Sistemas | ERP - SINQIA (23710);10;2;33;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (23710);10;2;33;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -1417,7 +1417,7 @@ Favor, providenciar uma melhoria no relatório de aprovados no Power BI, segregan
 Ficamos a disposição para auxiliar na elaboração.
 
 6) ANEXO - ?? : Nenhum documento anexado"
-84;Sistemas | ERP - SINQIA (23348);33;4;41;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (23348);33;4;41;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -1429,7 +1429,7 @@ SISTEMAS - ??
 Estamos com uma proposta simulada considerando 1 parcela de pagamento e 5 meses de carência, sendo 8% de rebate mais ou menos, mas no momento de simular o rebate da operação no sistema, o mesmo não permite o cadastro, disponibilizando até 5% o valor de rebate da operação. 
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-85;Avaliação Processo Comercial - Quantidade de itens na proposta (5553);6;4;35;3;225;"Prezados, bom dia!
+Avaliação Processo Comercial - Quantidade de itens na proposta (5553);6;4;35;3;225;"Prezados, bom dia!
 
 Conforme alinhado em reunião, solicitamos uma melhoria no sistema Sinqia para lançamento da proposta e entrada de Nfe.
 Hoje no sistema Sinqia para que possamos lançar a Nfe e chassi, o comercial lança uma a uma a quantidade de máquinas financiadas no momento de gerar a proposta, por exemplo, se tivermos 10 maquinas, serão lançadas na proposta 10 vezes a mesma máquina, na CCB sairá 10 vezes o mesmo item, isso acontece para que no momento que recebermos a Nota Fiscal com o Chassi possamos inserir no sistema EM as 10 Nfe individualmente.
@@ -1443,8 +1443,8 @@ Para melhoria, sugerimos que o comercial ao lançar a proposta coloque apenas uma
 No Sinqia EM, devemos ter a possibilidade de fazer a entrada de todas as notas individualmente, porque a emissão da Nfe de linha amarela é feita individual, para cada chassi será gerado uma Nfe.
 
 Desde já agradeço!"
-86;Avaliação Processo Comercial - CD - Inativar Equipamentos (6031);25;4;42;3;225;Avaliar com a Sinqia uma opção para inativar o cadastro de equipamentos não utilizados.
-87;Sistemas | ERP - SINQIA (21265);29;4;40;3;225;"DADOS DO FORMULÁRIO
+Avaliação Processo Comercial - CD - Inativar Equipamentos (6031);25;4;42;3;225;Avaliar com a Sinqia uma opção para inativar o cadastro de equipamentos não utilizados.
+Sistemas | ERP - SINQIA (21265);29;4;40;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -1466,7 +1466,7 @@ Relatório e filtro de pesquisa em anexo.  
 Desde já agradeço e ficamos a disposição.
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-88;SD-216922 TE - DCTFWeb - MIT - Módulo de Inclusão de Tributos (19887);28;4;51;3;225;"DADOS DO FORMULÁRIO
+SD-216922 TE - DCTFWeb - MIT - Módulo de Inclusão de Tributos (19887);28;4;51;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -1489,7 +1489,7 @@ Desta forma será extinta a DCTF Convencional a partir da competência Janeiro/202
  
 
 5) ANEXO - ?? : Documento anexado "
-89;Sistemas | ERP - SINQIA (18667);5;2;46;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (18667);5;2;46;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -1507,14 +1507,14 @@ Contrato Social e/ou ultimas alterações (obrigatório)
  
 
 6) ANEXO - ?? : Documento anexado"
-90;SD-69424 Cadastro de Equipamento na Proposta / Nota Fiscal (11900);5;4;46;3;225;"Bom dia!
+SD-69424 Cadastro de Equipamento na Proposta / Nota Fiscal (11900);5;4;46;3;225;"Bom dia!
 
 Hoje temos que lançar os equipamentos no Portal de Crédito, aba Garantias da tela de Crédito Parcelado, um equipamento por vez, mesmo que ele se repita por dez vezes, por exemplo.
 
 Isso acontece pois no lançamento da Nota Fiscal no Crédito - EM, tela de Contrato de Crédito Parcelado, o sistema puxa um equipamento por vez para cada nota.
 
 As notas fiscais são faturadas com apenas um equipamento. Precisamos que esse processo seja otimizado, onde, por exemplo, ao lançarmos a quantidade de 10 equipamentos no Portal de Crédito, automaticamente no Crédito - EM sejam gerado dez registros de equipamentos com quantidade um em cada, para que ao lançar a nota fiscal seja vinculada a cada equipamento."
-91;Regulatório 6209 (4883);16;4;36;3;225;"SISTEMAS - ??
+Regulatório 6209 (4883);16;4;36;3;225;"SISTEMAS - ??
 
 1) SELECIONE O SISTEMA - ???? : ERP - SINQIA - ?????? - SINQIA
 2) SELECIONE A OPÇÃO DESEJADA - ??????? : CP RDM - Risco de Mercado - CP RDM - ????
@@ -1528,7 +1528,7 @@ O Banco Central a partir de 01/01/2023 solicita a entrega dos documentos trimest
  
 
 6) ANEXO - ?? : Documento anexado"
-92;FO - Referências Pessoais (3408);6;4;10;3;225;"n
+FO - Referências Pessoais (3408);6;4;10;3;225;"n
 n
 
 SISTEMAS - ??
@@ -1560,7 +1560,7 @@ nntileza cancelar essa obrigatoriedade por ser um item que não é utilizado em no
 Obrigada.
 nn
 6) ANEXO - ?? : Documento anexado"
-93;FINAME - Botão Cadastro na tela da proposta (5660);10;4;33;3;225;"SISTEMAS - ??
+FINAME - Botão Cadastro na tela da proposta (5660);10;4;33;3;225;"SISTEMAS - ??
 
 1) SELECIONE O SISTEMA - ???? : ERP - SINQIA - ?????? - SINQIA
 2) SELECIONE A OPÇÃO DESEJADA - ??????? : FO - Portal de Crédito - FO - ????
@@ -1572,13 +1572,13 @@ Bom dia.
 No processo de homologação de operações pelo FINAME, identificamos que não é possível abrir o cadastro pela proposta, assim como é feito nas operações de CDC. Dessa forma, peço a gentileza de verificar com a Sinqia a correção do processo, pois o fato otimiza o processo de crédito.
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-94;CO ILG - Tela de Vinculação do Certificado do FGC (11061);28;4;37;3;225;"Bom dia\!
+CO ILG - Tela de Vinculação do Certificado do FGC (11061);28;4;37;3;225;"Bom dia\!
 
 Conforme visto no atendimento do chamado SD-122745, atualmente o sistema Regulatórios Contábeis não disponibiliza tela para vincularmos a JKS da chave pública do FGC. Segundo Tiago Alves e Felipe Tamashiro isso já está em desenvolvimento.
 
 Dessa forma, estamos abrindo o chamado para formalizarmos o aguardo da versão que terá essa funcionalidade."
-95;FO - Tela Importar dados (X21SF0110A) (11850);6;4;10;3;225;Recentemente tivemos um erro operacional, o qual o usuário do Portal de Crédito realizou a importação de dados, marcando a flag dos documentos (anexos). Isso gerou um retrabalho para que os documentos pudessem estar coerentes com os cadastros, pois marcando essa flag o sistema substitui os dados do Portal de Crédito com os dados importados do Cadastro CD.
-96;BAIXAS MULTIPLAS (5543);10;4;33;3;225;"Bom dia, pessoal.
+FO - Tela Importar dados (X21SF0110A) (11850);6;4;10;3;225;Recentemente tivemos um erro operacional, o qual o usuário do Portal de Crédito realizou a importação de dados, marcando a flag dos documentos (anexos). Isso gerou um retrabalho para que os documentos pudessem estar coerentes com os cadastros, pois marcando essa flag o sistema substitui os dados do Portal de Crédito com os dados importados do Cadastro CD.
+BAIXAS MULTIPLAS (5543);10;4;33;3;225;"Bom dia, pessoal.
 
 Hoje tivemos a quitação de dois contratos do cliente AIZ. Tivemos que fazer a baixa manual de 87 parcelas. Sabemos que o sistema nos da a possibilidade de baixar todas as parcelas de uma só vez, porém, conforme conversamos, está faltando um campo que talvez seja importante para a tesouraria. Abaixo, as evidências:
 
@@ -1594,7 +1594,7 @@ Hoje tivemos a quitação de dois contratos do cliente AIZ. Tivemos que fazer a ba
 No primeiro caso, o usuário consegue especificar qual é o Banco que recebeu os recursos, enquanto nas baixas múltiplas, não existe esse campo.
 
 Dessa forma, por gentileza, verificar o impacto da ausência desse campo, bem como a necessidade de inclusão. Solicitou urgência, uma vez que temos previsto o recebimento de quitação de mais dois contratos e, a solução desse problema otimizaria tempo para realizar as baixas."
-97;Alteração do campo Renda Bruta Mensal para Renda Bruta Anual (5555);6;4;10;3;225;"Boa tarde!
+Alteração do campo Renda Bruta Mensal para Renda Bruta Anual (5555);6;4;10;3;225;"Boa tarde!
 
 Peço a gentileza de verificar no Portal de Crédito - FO - Cadastro de Pessoa Física, a aba de Dados Profissionais onde é solicitado o preenchimento obrigatório de Renda Bruta mensal e Renda líquida mensal se tem como alterar para Renda Anual, porque no checklist de formalização é solicitado aos clientes pessoa física o Informe de Imposto de Renda e com isso o preenchimento das informações será mais preciso conforme o IR pois na declaração o valor dos rendimentos tributáveis é anual:
 
@@ -1607,7 +1607,7 @@ Segue um exemplo de declaração de IR onde é descrito a renda anual:
 Coloco-me a disposição para esclarecimentos.
 
 At.te"
-98;FO - Cadastro de Clientes Automatizado (7020);6;4;10;3;225;"DADOS DO FORMULÁRIO
+FO - Cadastro de Clientes Automatizado (7020);6;4;10;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -1627,7 +1627,7 @@ Sigo a disposição.
 At.te, 
 
 6) ANEXO - ?? : Nenhum documento anexado "
-99;EM - Espaços da chave de acesso da NFe (11678);6;4;10;3;225;"DADOS DO FORMULÁRIO
+EM - Espaços da chave de acesso da NFe (11678);6;4;10;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -1645,7 +1645,7 @@ Em conversa com a Sinqia foi solicitado abertura de TIC para melhoria no sistema
 Seguimos a disposição para qualquer esclarecimento.
 
 6) ANEXO - ?? : Documento anexado "
-100;Officer busca fornecedor no lançamento de propostas (11899);5;4;46;3;225;"Bom dia!
+Officer busca fornecedor no lançamento de propostas (11899);5;4;46;3;225;"Bom dia!
 
 Ao buscarmos por um CLIENTE no lançamento de uma proposta os fornecedores estão sendo exibidos também.
 
@@ -1653,7 +1653,7 @@ No exemplo, segue o cadastro de um fornecedor. Perceba que a categoria dele é FO
 
 Caminho de acesso:
 Portal de Crédito -> Proposta -> Empréstimo parcelado (X21SF0104N)"
-101;Sistemas | ERP - SINQIA (13989);8;4;48;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (13989);8;4;48;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -1685,7 +1685,7 @@ Obrigado!
  
 
 6) ANEXO - ?? : Documento anexado"
-102;Sistemas | ERP - SINQIA (12252);6;4;10;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (12252);6;4;10;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -1703,7 +1703,7 @@ Favor verificar a inclusão.
 Obrigada
 
 6) ANEXO - ?? : Documento anexado"
-103;Relatório de Conferência da DES Pouso Alegre (6332);28;4;51;3;225;"SISTEMAS - ??
+Relatório de Conferência da DES Pouso Alegre (6332);28;4;51;3;225;"SISTEMAS - ??
 
 1) SELECIONE O SISTEMA - ???? : ERP - SINQIA - ?????? - SINQIA
 2) SELECIONE A OPÇÃO DESEJADA - ??????? : CO ILG - Regulatórios Contábeis - CO ILG - ??
@@ -1717,7 +1717,7 @@ Para validação do arquivo DES da Prefeitura de Pouso Alegre (Serviços Tomados de
  
 
 6) ANEXO - ?? : Nenhum documento anexado"
-104;Conglomerado econômico (4704);10;4;33;3;225;"SISTEMAS - ??
+Conglomerado econômico (4704);10;4;33;3;225;"SISTEMAS - ??
 
 1) SELECIONE O SISTEMA - ???? : ERP - SINQIA - ?????? - SINQIA
 2) SELECIONE A OPÇÃO DESEJADA - ??????? : FO - Portal de Crédito - FO - ????

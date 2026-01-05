@@ -1,5 +1,5 @@
-﻿ID;Título;Entidade;Status;Requerente - Requerente;Atribuído - Grupo Técnico;Categoria;Descrição
-1;Sistemas | ERP - SINQIA (29390);6;2;10;3;225;"DADOS DO FORMULÁRIO
+﻿Título;Entidade;Status;Requerente - Requerente;Atribuído - Grupo Técnico;Categoria;Descrição
+Sistemas | ERP - SINQIA (29390);6;2;10;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -11,7 +11,7 @@ SISTEMAS - ??
 Cadastro de faturamento da empresa com valor alto interfere na hora de realizar o desembolso no EM. Para desembolsar tenho que informar valor incorreto e menor no faturamento para conseguir seguir com o desembolso.
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-2;Sistemas | ERP - SINQIA (25407);28;4;51;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (25407);28;4;51;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -25,7 +25,7 @@ Prezados
 Realização de lançamento múltiplo com inclusão manual do nº do lote, porém o sistema está mudando o nº do lote informado.
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-3;Sistemas | ERP - SINQIA (32663);28;4;51;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (32663);28;4;51;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -39,7 +39,7 @@ Prezados
 Para entrega da ECD (Sped Contábil), precisamos parametrizar a tela de Relacionamento COSIF x Conta Referencial (RFB), precisamos de apoio do time de TI para efetuar os parâmetros sendo que não aparece nenhuma informação nesta tela.
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-4;Sistemas | ERP - SINQIA (32647);28;4;51;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (32647);28;4;51;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -56,7 +56,7 @@ Trata-se de Regulatório com a finalidade de demonstrar a ''apuração'' do IBS 
 Em anexo layout publicado no site do Sistema Público de Escrituração Digital - Sped
 
 5) ANEXO - ?? : Documento anexado"
-5;Sistemas | ERP - SINQIA (31594);10;4;9;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (31594);10;4;9;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -68,7 +68,7 @@ SISTEMAS - ??
 Reorganização da esteira de aprovação em comite para inclusão do comite China após comitê Brasil, ambos sem contabilizar tempo de análise.
 
 6) ANEXO - ?? : Nenhum documento anexado"
-6;Sistemas | ERP - SINQIA (30119);10;4;9;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (30119);10;4;9;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -80,7 +80,7 @@ SISTEMAS - ??
 Verificar a possibilidade de incluir na esteira de crédito a identificação de clientes inadimplentes quando forem solicitadas novas propostas dos mesmo, tendo um status de ''Parcela Vencida'' para uma análise mais aprofundada.
 
 6) ANEXO - ?? : Nenhum documento anexado"
-7;Infraestrutura | E-mail (32593);6;2;35;1;252;"DADOS DO FORMULÁRIO
+Infraestrutura | E-mail (32593);6;2;35;1;252;"DADOS DO FORMULÁRIO
 
 INFRAESTRUTURA - ????
 
@@ -98,7 +98,7 @@ SOLICITO RELATORIO DO SAC, FALE CONOSCO PARA PLATAFORMA GOTO.
 DESDE JÁ AGRADEÇO!
 
 5) ANEXO - ?? : Nenhum documento anexado"
-8;Equipamentos | Desktop/Laptop/Monitor (31612);17;4;25;1;249;"DADOS DO FORMULÁRIO
+Equipamentos | Desktop/Laptop/Monitor (31612);17;4;25;1;249;"DADOS DO FORMULÁRIO
 
 EQUIPAMENTOS - ??
 
@@ -112,7 +112,7 @@ peço a gentileza de programarem a troca do laptop que sendo utilizado pela cola
 Motivo: falta de teclas.
 
 4) EVIDÊNCIA(S) - ?? : Documento anexado"
-9;Sistemas | ERP - SINQIA (31257);28;4;11;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (31257);28;4;11;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
@@ -134,7 +134,7 @@ Desde já agradeço.
 Abraços
 
 6) EVIDÊNCIA(S) - ?? : Documento anexado"
-10;Sistemas | ERP - SINQIA (32580);33;2;22;3;225;"DADOS DO FORMULÁRIO
+Sistemas | ERP - SINQIA (32580);33;2;22;3;225;"DADOS DO FORMULÁRIO
 
 SISTEMAS - ??
 
