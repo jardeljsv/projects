@@ -1,0 +1,20 @@
+<root>
+  <name>Relatórios G4F</name>
+  <key>g4freports</key>
+  <state>dev</state>
+  <description>
+    <short>
+      <en>API-first GLPI report generator with editable draft and DOCX export.</en>
+      <pt_BR>Gerador de relatórios GLPI via API com rascunho editável e exportação DOCX.</pt_BR>
+    </short>
+    <long>
+      <en>Builds report drafts from GLPI API contexts such as tickets, ticket tasks, follow-ups, solutions, projects, project tasks and manual narrative entries.</en>
+      <pt_BR>Gera rascunhos de relatório a partir de contextos da API do GLPI, como chamados, tarefas de chamados, acompanhamentos, soluções, projetos, tarefas de projeto e entradas narrativas manuais.</pt_BR>
+    </long>
+  </description>
+  <langs>
+    <lang>en_US</lang>
+    <lang>pt_BR</lang>
+  </langs>
+  <license>MIT</license>
+</root>

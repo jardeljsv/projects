@@ -1,0 +1,289 @@
+{% import "components/form/fields_macros.html.twig" as fields %}
+
+{% set cfg = current_config|default({}) %}
+{% set disabled = can_edit ? false : true %}
+{% set groups_list = groups|default([]) %}
+{% set local_profiles_list = local_profiles|default([]) %}
+
+<style>
+.g4fr-config{max-width:1500px}.g4fr-card{background:#fff;border:1px solid #dbe3ec;border-radius:10px;padding:18px;margin-bottom:16px;box-shadow:0 1px 2px rgba(0,0,0,.03)}.g4fr-title{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}.g4fr-title h3{margin:0;color:#002B49;font-size:22px}.g4fr-muted{color:#687789;font-size:.875rem}.g4fr-section{border-top:1px solid #e7edf3;margin-top:18px;padding-top:18px}.g4fr-section:first-of-type{border-top:0;margin-top:8px;padding-top:0}.g4fr-section h4{margin:0 0 6px;color:#002B49;font-size:17px}.g4fr-grid-2{display:grid;grid-template-columns:repeat(2,minmax(280px,1fr));gap:14px}.g4fr-grid-3{display:grid;grid-template-columns:repeat(3,minmax(220px,1fr));gap:14px}.g4fr-grid-4{display:grid;grid-template-columns:repeat(4,minmax(180px,1fr));gap:14px}.g4fr-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.g4fr-pill{display:inline-block;padding:4px 10px;border-radius:12px;background:#8b949e;color:#fff;font-weight:600;min-width:88px;text-align:center}.g4fr-pill[data-state="ok"]{background:#2fb344}.g4fr-pill[data-state="fail"]{background:#d63939}.g4fr-pill[data-state="busy"]{background:#626976}.g4fr-select-box{min-height:240px}.g4fr-table th{font-size:.72rem;text-transform:uppercase;color:#506080;white-space:nowrap}.g4fr-table td{vertical-align:top}.g4fr-table .form-control,.g4fr-table .form-select{min-width:130px}.g4fr-table .g4fr-url{min-width:260px}.g4fr-table .g4fr-token{min-width:190px}.g4fr-table .g4fr-route-group{min-width:280px}.g4fr-advanced summary{cursor:pointer;font-weight:600;color:#002B49}.g4fr-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.82rem}.g4fr-help-card{background:#f6f9fc;border:1px solid #dbe7f3;border-radius:8px;padding:12px}.g4fr-token-row[hidden]{display:none!important}@media(max-width:1100px){.g4fr-grid-2,.g4fr-grid-3,.g4fr-grid-4{grid-template-columns:1fr}.g4fr-title{display:block}}
+</style>
+
+<form name="g4freports_config_form" action="{{ "Config"|itemtype_form_path }}" method="POST" class="g4fr-config">
+  <input type="hidden" name="config_class" value="GlpiPlugin\\G4freports\\Config">
+  <input type="hidden" name="config_context" value="plugin:g4freports">
+  <input type="hidden" name="_glpi_csrf_token" value="{{ csrf_token() }}">
+
+  <div class="g4fr-card">
+    <div class="g4fr-title">
+      <div>
+        <h3>{{ __('Relatórios G4F', 'g4freports') }}</h3>
+        <div class="g4fr-muted">Configuração administrativa da conexão API-first, permissões locais e padrões visuais do relatório. A geração do relatório fica apenas em Ferramentas &gt; Relatórios G4F.</div>
+      </div>
+      <div class="g4fr-help-card">
+        <strong>Fluxo recomendado</strong><br>
+        Salve a conexão, teste o perfil padrão e depois libere os grupos/perfis que poderão usar o gerador.
+      </div>
+    </div>
+
+    <div class="g4fr-section">
+      <h4>Geral</h4>
+      <div class="g4fr-grid-4 mt-2">
+        <div>{{ fields.dropdownYesNo('enabled', cfg['enabled'] is defined ? cfg['enabled'] : 1, 'Módulo habilitado', {'disabled': disabled}) }}</div>
+        <div>{{ fields.textField('contract_label', cfg['contract_label']|default('SES-DF'), 'Contrato / ambiente', {'disabled': disabled, 'placeholder': 'SES-DF'}) }}</div>
+        <div>{{ fields.textField('max_items', cfg['max_items']|default('200'), 'Máximo de entradas', {'disabled': disabled, 'pattern': '^[0-9]+$', 'title': 'Número máximo de entradas no rascunho'}) }}</div>
+        <div>{{ fields.dropdownYesNo('mask_sensitive_data', cfg['mask_sensitive_data']|default(1), 'Mascarar dados sensíveis', {'disabled': disabled}) }}</div>
+      </div>
+    </div>
+
+    <div class="g4fr-section">
+      <h4>Perfil padrão de API GLPI</h4>
+      <div class="g4fr-muted mb-3">Use a URL do endpoint REST do GLPI. Exemplo: <code>https://servidor/apirest.php</code>. As chamadas são feitas pelo PHP do plugin, não diretamente pelo navegador.</div>
+
+      <div class="g4fr-grid-2">
+        <div>{{ fields.textField('default_profile_name', cfg['default_profile_name']|default('GLPI padrão'), 'Nome do perfil', {'disabled': disabled, 'placeholder': 'SES-DF Produção'}) }}</div>
+        <div>{{ fields.textField('api_base_url', cfg['api_base_url']|default(''), 'URL da API GLPI', {'disabled': disabled, 'placeholder': 'https://servidor/apirest.php'}) }}</div>
+      </div>
+
+      <div class="g4fr-grid-4 mt-2">
+        <div>
+          <label class="form-label">Modo de autenticação</label>
+          <select name="api_auth_mode" id="g4fr_api_auth_mode" class="form-select" {{ disabled ? 'disabled' : '' }}>
+            <option value="user_token" {{ cfg['api_auth_mode']|default('user_token') == 'user_token' ? 'selected' : '' }}>App token + User token</option>
+            <option value="session_token" {{ cfg['api_auth_mode']|default('user_token') == 'session_token' ? 'selected' : '' }}>Session token fixo</option>
+            <option value="env" {{ cfg['api_auth_mode']|default('user_token') == 'env' ? 'selected' : '' }}>Tokens por variável de ambiente</option>
+          </select>
+        </div>
+        <div>{{ fields.textField('api_app_token', cfg['api_app_token']|default(''), 'App token', {'disabled': disabled, 'autocomplete': 'off'}) }}</div>
+        <div class="g4fr-token-row" data-auth-show="user_token env">{{ fields.textField('api_user_token', cfg['api_user_token']|default(''), 'User token', {'disabled': disabled, 'autocomplete': 'off'}) }}</div>
+        <div class="g4fr-token-row" data-auth-show="session_token">{{ fields.textField('api_session_token', cfg['api_session_token']|default(''), 'Session token', {'disabled': disabled, 'autocomplete': 'off'}) }}</div>
+      </div>
+
+      <details class="g4fr-advanced mt-2">
+        <summary>Segredos por variável de ambiente</summary>
+        <div class="g4fr-muted mt-2">Use quando os tokens estiverem definidos no ambiente do servidor. Exemplo: <code>G4FREPORTS_USER_TOKEN</code>.</div>
+        <div class="g4fr-grid-3 mt-2">
+          <div>{{ fields.textField('api_app_token_env', cfg['api_app_token_env']|default(''), 'ENV App token', {'disabled': disabled}) }}</div>
+          <div>{{ fields.textField('api_user_token_env', cfg['api_user_token_env']|default(''), 'ENV User token', {'disabled': disabled}) }}</div>
+          <div>{{ fields.textField('api_session_token_env', cfg['api_session_token_env']|default(''), 'ENV Session token', {'disabled': disabled}) }}</div>
+        </div>
+      </details>
+
+      <div class="g4fr-grid-4 mt-2">
+        <div>{{ fields.textField('request_timeout_ms', cfg['request_timeout_ms']|default('60000'), 'Timeout padrão (ms)', {'disabled': disabled, 'pattern': '^[0-9]+$'}) }}</div>
+        <div>{{ fields.textField('default_entity_id', cfg['default_entity_id']|default('0'), 'Entidade padrão', {'disabled': disabled, 'pattern': '^[0-9]+$'}) }}</div>
+        <div>{{ fields.dropdownYesNo('recursive_entities', cfg['recursive_entities']|default(1), 'Incluir entidades filhas', {'disabled': disabled}) }}</div>
+        <div>{{ fields.dropdownYesNo('api_verify_tls', cfg['api_verify_tls']|default(1), 'Verificar TLS', {'disabled': disabled}) }}</div>
+      </div>
+
+      <div class="mt-3 g4fr-actions">
+        <button type="button" id="g4fr-test-default-btn" class="btn btn-secondary btn-sm" {{ disabled ? 'disabled' : '' }}>Testar conexão padrão</button>
+        <span id="g4fr-test-default-pill" class="g4fr-pill" data-state="unknown">Unknown</span>
+        <span id="g4fr-test-default-detail" class="g4fr-muted"></span>
+      </div>
+    </div>
+
+    <div class="g4fr-section">
+      <h4>Permissões de uso do gerador</h4>
+      <div class="g4fr-muted mb-3">Vazio = qualquer usuário autenticado pode abrir o gerador. Administradores continuam tendo acesso. Se houver roteamento por grupo ativo, ele passa a controlar o perfil de API permitido.</div>
+      <div class="g4fr-grid-2">
+        <div>
+          <label for="g4fr_allowed_groups_select" class="form-label">Grupos autorizados</label>
+          <input type="text" id="g4fr_allowed_groups_search" class="form-control mb-2" placeholder="Pesquisar grupos por nome ou ID" {{ disabled ? 'disabled' : '' }}>
+          <select id="g4fr_allowed_groups_select" class="form-select g4fr-select-box" multiple size="9" {{ disabled ? 'disabled' : '' }}></select>
+          <div class="form-text" id="g4fr_allowed_groups_summary">Selecionados: 0.</div>
+          <input type="hidden" name="allowed_groups" id="g4fr_allowed_groups" value="{{ cfg['allowed_groups']|default('')|e('html_attr') }}">
+        </div>
+        <div>
+          <label for="g4fr_allowed_profiles_select" class="form-label">Perfis GLPI autorizados</label>
+          <input type="text" id="g4fr_allowed_profiles_search" class="form-control mb-2" placeholder="Pesquisar perfis por nome ou ID" {{ disabled ? 'disabled' : '' }}>
+          <select id="g4fr_allowed_profiles_select" class="form-select g4fr-select-box" multiple size="9" {{ disabled ? 'disabled' : '' }}></select>
+          <div class="form-text" id="g4fr_allowed_profiles_summary">Selecionados: 0.</div>
+          <input type="hidden" name="allowed_profiles" id="g4fr_allowed_profiles" value="{{ cfg['allowed_profiles']|default('')|e('html_attr') }}">
+        </div>
+      </div>
+    </div>
+
+    <details class="g4fr-advanced g4fr-section">
+      <summary>Perfis adicionais de API</summary>
+      <div class="g4fr-muted mt-2 mb-2">Opcional. Use quando a mesma instalação do plugin precisar consultar mais de um GLPI/contrato.</div>
+      <div class="d-flex justify-content-end mb-2"><button type="button" class="btn btn-outline-primary btn-sm" id="g4fr-add-profile" {{ disabled ? 'disabled' : '' }}>Adicionar perfil</button></div>
+      <div class="table-responsive">
+        <table class="table table-sm align-middle g4fr-table" id="g4fr-profiles-table">
+          <thead><tr><th>Nome</th><th>URL API</th><th>Autenticação</th><th>App token</th><th>User token</th><th>Session token</th><th>Timeout</th><th>TLS</th><th>Ativo</th><th>Teste</th><th></th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <input type="hidden" name="api_profiles_json" id="g4fr_api_profiles_json" value="{{ additional_profiles_json|default('[]')|e('html_attr') }}">
+    </details>
+
+    <details class="g4fr-advanced g4fr-section">
+      <summary>Roteamento por grupo</summary>
+      <div class="g4fr-muted mt-2 mb-2">Opcional. Quando uma rota ativa existir, ela define qual perfil de API o grupo usará. Menor prioridade vence.</div>
+      <div class="d-flex justify-content-end mb-2"><button type="button" class="btn btn-outline-primary btn-sm" id="g4fr-add-route" {{ disabled ? 'disabled' : '' }}>Adicionar rota</button></div>
+      <div class="table-responsive">
+        <table class="table table-sm align-middle g4fr-table" id="g4fr-routes-table">
+          <thead><tr><th>Grupo</th><th>Perfil API</th><th>Prioridade</th><th>Incluir filhos</th><th>Ativa</th><th></th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <input type="hidden" name="group_routes_json" id="g4fr_group_routes_json" value="{{ group_routes_json|default('[]')|e('html_attr') }}">
+    </details>
+
+    <div class="g4fr-section">
+      <h4>Textos padrão do relatório</h4>
+      <div class="g4fr-grid-2 mt-2">
+        <div>{{ fields.textField('default_report_title', cfg['default_report_title']|default('Relatório Gerencial de Atividades'), 'Título padrão', {'disabled': disabled}) }}</div>
+        <div>{{ fields.textField('default_footer', cfg['default_footer']|default(''), 'Rodapé DOCX', {'disabled': disabled}) }}</div>
+      </div>
+      <label class="form-label mt-2">Abrangência padrão</label>
+      <textarea class="form-control" name="default_scope_text" rows="3" {{ disabled ? 'disabled' : '' }}>{{ cfg['default_scope_text']|default('') }}</textarea>
+      <label class="form-label mt-2">Objetivo padrão</label>
+      <textarea class="form-control" name="default_objective_text" rows="3" {{ disabled ? 'disabled' : '' }}>{{ cfg['default_objective_text']|default('') }}</textarea>
+    </div>
+
+    <details class="g4fr-advanced g4fr-section">
+      <summary>Avançado: mapeamento de Search Options</summary>
+      <div class="g4fr-muted mt-2 mb-2">Use somente quando o diagnóstico mostrar que algum campo da API GLPI precisa de sobrescrita manual.</div>
+      <textarea class="form-control g4fr-mono" name="field_overrides_json" rows="8" {{ disabled ? 'disabled' : '' }}>{{ cfg['field_overrides_json']|default('{}') }}</textarea>
+    </details>
+
+    <div class="mt-4 g4fr-actions">
+      {% if can_edit %}
+      <button class="btn btn-primary" type="submit" name="update" value="1">Salvar configurações</button>
+      {% endif %}
+      <a class="btn btn-outline-secondary" href="{{ diagnostics_url|default('../plugins/g4freports/front/diagnostics.php') }}">Diagnóstico técnico</a>
+    </div>
+  </div>
+</form>
+
+<datalist id="g4fr-groups-datalist">
+{% for group in groups_list %}
+  <option value="{{ group.name }} [#{{ group.id }}]"></option>
+{% endfor %}
+</datalist>
+
+<script>
+(function(){
+  'use strict';
+  const disabled = {{ disabled ? 'true' : 'false' }};
+  const groups = {{ groups_list|json_encode|raw }} || [];
+  const localProfiles = {{ local_profiles_list|json_encode|raw }} || [];
+  let profiles = [];
+  let routes = [];
+  try { profiles = JSON.parse(document.getElementById('g4fr_api_profiles_json').value || '[]') || []; } catch(e) { profiles = []; }
+  try { routes = JSON.parse(document.getElementById('g4fr_group_routes_json').value || '[]') || []; } catch(e) { routes = []; }
+
+  function glpiBase(){
+    const path = window.location.pathname || '';
+    const pluginIdx = path.indexOf('/plugins/g4freports/');
+    if (pluginIdx !== -1) return window.location.origin + path.slice(0, pluginIdx);
+    const frontIdx = path.indexOf('/front/');
+    if (frontIdx !== -1) return window.location.origin + path.slice(0, frontIdx);
+    return window.location.origin + (window.GLPI_ROOT_DOC || '');
+  }
+  function pluginUrl(rel){ return glpiBase().replace(/\/+$/,'') + '/plugins/g4freports/' + String(rel).replace(/^\/+/,''); }
+  const TEST_URL = pluginUrl('front/test_connection.php');
+
+  function norm(s){ return (s||'').toString().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
+  function parseIds(raw){ raw=(raw||'').toString().trim(); if(!raw) return new Set(); try{ const j=JSON.parse(raw); if(Array.isArray(j)) return new Set(j.map(Number).filter(n=>Number.isFinite(n)&&n>0)); }catch(e){} return new Set(raw.split(/[^0-9]+/).map(Number).filter(n=>Number.isFinite(n)&&n>0)); }
+  function unique(prefix){ return prefix + '_' + Date.now().toString(36) + '_' + Math.random().toString(36).slice(2,8); }
+  function el(tag, cls){ const e=document.createElement(tag); if(cls) e.className=cls; return e; }
+  function td(child){ const c=document.createElement('td'); c.appendChild(child); return c; }
+  function input(value, cls, type){ const e=el('input', cls || 'form-control form-control-sm'); e.type=type||'text'; e.value=value||''; e.disabled=disabled; return e; }
+  function checkbox(checked){ const e=input('', 'form-check-input', 'checkbox'); e.checked=!!checked; return e; }
+  function select(opts, value){ const s=el('select','form-select form-select-sm'); s.disabled=disabled; opts.forEach(o=>{ const op=document.createElement('option'); op.value=o.value; op.textContent=o.label; if(o.value===value) op.selected=true; s.appendChild(op); }); return s; }
+  function setPill(pill, state, text, title){ if(!pill) return; pill.dataset.state=state; pill.textContent=text; pill.title=title||''; }
+
+  const groupById = new Map(groups.map(g => [String(g.id), g]));
+  const profileById = new Map(localProfiles.map(p => [String(p.id), p]));
+  function itemLabel(item){ return (item && item.name ? item.name : ('ID '+(item ? item.id : ''))) + ' [#' + (item ? item.id : '') + ']'; }
+  function groupLabel(id){ const g=groupById.get(String(parseInt(id,10))); return g ? itemLabel(g) : (id ? 'Grupo #' + id : ''); }
+  function localProfileLabel(id){ const p=profileById.get(String(parseInt(id,10))); return p ? itemLabel(p) : (id ? 'Perfil #' + id : ''); }
+  function filterList(list,q){ q=norm(q); if(!q) return list.slice(0,250); return list.filter(i => String(i.id).includes(q) || norm(i.name).includes(q)).slice(0,250); }
+  function resolveGroupId(raw){ raw=(raw||'').toString().trim(); if(!raw) return 0; let m=raw.match(/\[#\s*(\d+)\]$/)||raw.match(/^(\d+)$/); if(m && groupById.has(String(parseInt(m[1],10)))) return parseInt(m[1],10); const n=norm(raw); for(const g of groups){ if(norm(g.name)===n) return parseInt(g.id,10); } return 0; }
+
+  function bindMulti(kind, list, labelFn){
+    const search=document.getElementById('g4fr_allowed_'+kind+'_search');
+    const selectEl=document.getElementById('g4fr_allowed_'+kind+'_select');
+    const hidden=document.getElementById('g4fr_allowed_'+kind);
+    const summary=document.getElementById('g4fr_allowed_'+kind+'_summary');
+    if(!selectEl || !hidden) return null;
+    let selected=parseIds(hidden.value);
+    function sync(){ hidden.value = selected.size ? JSON.stringify(Array.from(selected).sort((a,b)=>a-b)) : ''; }
+    function render(){
+      const visible=filterList(list, search ? search.value : '');
+      selectEl.innerHTML='';
+      visible.forEach(item=>{ const opt=document.createElement('option'); opt.value=item.id; opt.textContent=labelFn(item.id); opt.selected=selected.has(Number(item.id)); selectEl.appendChild(opt); });
+      if(summary) summary.textContent = 'Selecionados: ' + selected.size + (selected.size ? ' — ' + Array.from(selected).slice(0,4).map(labelFn).join(', ') + (selected.size>4?'...':'') : '.');
+      sync();
+    }
+    selectEl.addEventListener('change',()=>{ Array.from(selectEl.options).forEach(o=>{ const id=Number(o.value); if(o.selected) selected.add(id); else selected.delete(id); }); render(); });
+    if(search) search.addEventListener('input', render);
+    render(); return {render, sync};
+  }
+  const allowedGroups = bindMulti('groups', groups, groupLabel);
+  const allowedProfiles = bindMulti('profiles', localProfiles, localProfileLabel);
+
+  function val(name){ const e=document.querySelector('[name="'+name+'"]'); return e ? e.value : ''; }
+  function defaultProfile(){ return {id:'__adhoc__', name:val('default_profile_name')||'GLPI padrão', base_url:val('api_base_url'), app_token:val('api_app_token'), user_token:val('api_user_token'), session_token:val('api_session_token'), app_token_env:val('api_app_token_env'), user_token_env:val('api_user_token_env'), session_token_env:val('api_session_token_env'), auth_mode:val('api_auth_mode')||'user_token', verify_tls:val('api_verify_tls') !== '0', timeout_ms:val('request_timeout_ms')||'60000'}; }
+  async function testProfile(profile, pill, detailEl){
+    setPill(pill,'busy','Testando...'); if(detailEl) detailEl.textContent='';
+    try{
+      const qs = new URLSearchParams();
+      Object.keys(profile||{}).forEach(k => qs.set(k, profile[k] == null ? '' : String(profile[k])));
+      qs.set('_', Date.now().toString());
+      const res = await fetch(TEST_URL + '?' + qs.toString(), {method:'GET', credentials:'same-origin', cache:'no-store', headers:{'Accept':'application/json','X-Requested-With':'XMLHttpRequest'}});
+      const txt = await res.text(); let data=null; try{data=txt?JSON.parse(txt):null;}catch(e){}
+      if(res.ok && data && data.ok){ setPill(pill,'ok','Conectado', data.base_url || ''); if(detailEl) detailEl.textContent = data.message || data.base_url || ''; }
+      else { const msg=(data && (data.reason || data.error || data.detail)) || txt || ('HTTP '+res.status); setPill(pill,'fail','Falhou', msg.slice(0,700)); if(detailEl) detailEl.textContent = msg.slice(0,220); }
+    }catch(e){ const msg=e && e.message ? e.message : String(e); setPill(pill,'fail','Erro',msg); if(detailEl) detailEl.textContent=msg; }
+  }
+  const defaultTest=document.getElementById('g4fr-test-default-btn');
+  if(defaultTest) defaultTest.addEventListener('click',()=>testProfile(defaultProfile(), document.getElementById('g4fr-test-default-pill'), document.getElementById('g4fr-test-default-detail')));
+
+  function syncProfiles(){ const h=document.getElementById('g4fr_api_profiles_json'); if(h) h.value=JSON.stringify(profiles); }
+  function syncRoutes(){ const h=document.getElementById('g4fr_group_routes_json'); if(h) h.value=JSON.stringify(routes); }
+  function apiProfileOptions(){ const opts=[{value:'__default__', label:(val('default_profile_name')||'GLPI padrão')+' (padrão)'}]; profiles.forEach(p=>opts.push({value:p.id, label:p.name||p.id})); return opts; }
+
+  function renderProfiles(){
+    const body=document.querySelector('#g4fr-profiles-table tbody'); if(!body) return; body.innerHTML='';
+    if(!profiles.length){ const tr=document.createElement('tr'); const c=td(document.createTextNode('Nenhum perfil adicional configurado.')); c.colSpan=11; c.className='text-muted'; tr.appendChild(c); body.appendChild(tr); renderRoutes(); return; }
+    profiles.forEach((p,idx)=>{
+      if(!p.id) p.id=unique('profile'); const tr=document.createElement('tr');
+      const name=input(p.name||'','form-control form-control-sm'); name.addEventListener('input',()=>{p.name=name.value; syncProfiles(); renderRoutes();});
+      const url=input(p.base_url||p.api_base_url||'','form-control form-control-sm g4fr-url'); url.placeholder='https://servidor/apirest.php'; url.addEventListener('input',()=>{p.base_url=url.value; syncProfiles();});
+      const auth=select([{value:'user_token',label:'User token'},{value:'session_token',label:'Session token'}], p.auth_mode||'user_token'); auth.addEventListener('change',()=>{p.auth_mode=auth.value; syncProfiles();});
+      const app=input(p.app_token||'','form-control form-control-sm g4fr-token'); app.autocomplete='off'; app.addEventListener('input',()=>{p.app_token=app.value; syncProfiles();});
+      const user=input(p.user_token||'','form-control form-control-sm g4fr-token'); user.autocomplete='off'; user.addEventListener('input',()=>{p.user_token=user.value; syncProfiles();});
+      const sess=input(p.session_token||'','form-control form-control-sm g4fr-token'); sess.autocomplete='off'; sess.addEventListener('input',()=>{p.session_token=sess.value; syncProfiles();});
+      const timeout=input(p.timeout_ms||p.request_timeout_ms||'60000','form-control form-control-sm','number'); timeout.min='1000'; timeout.step='1000'; timeout.addEventListener('input',()=>{p.timeout_ms=timeout.value; syncProfiles();});
+      const tls=checkbox(p.verify_tls!==false && p.verify_tls!==0 && p.verify_tls!=='0'); tls.addEventListener('change',()=>{p.verify_tls=tls.checked; syncProfiles();});
+      const enabled=checkbox(p.enabled!==false && p.enabled!==0 && p.enabled!=='0'); enabled.addEventListener('change',()=>{p.enabled=enabled.checked; syncProfiles();});
+      const testWrap=el('div','g4fr-actions'); const btn=el('button','btn btn-secondary btn-sm'); btn.type='button'; btn.textContent='Testar'; btn.disabled=disabled; const pill=el('span','g4fr-pill'); pill.dataset.state='unknown'; pill.textContent='Unknown'; btn.addEventListener('click',()=>testProfile({id:p.id,name:name.value,base_url:url.value,auth_mode:auth.value,app_token:app.value,user_token:user.value,session_token:sess.value,timeout_ms:timeout.value,verify_tls:tls.checked}, pill, null)); testWrap.appendChild(btn); testWrap.appendChild(pill);
+      const remove=el('button','btn btn-outline-danger btn-sm'); remove.type='button'; remove.textContent='Remover'; remove.disabled=disabled; remove.addEventListener('click',()=>{ const old=profiles[idx].id; profiles.splice(idx,1); routes.forEach(r=>{ if(r.profile_id===old) r.profile_id='__default__'; }); syncProfiles(); syncRoutes(); renderProfiles(); renderRoutes(); });
+      [name,url,auth,app,user,sess,timeout,tls,enabled,testWrap,remove].forEach(ch=>tr.appendChild(td(ch))); body.appendChild(tr);
+    });
+    syncProfiles(); renderRoutes();
+  }
+
+  function routeGroupControl(route, idx){
+    const wrap=el('div'); const inp=input(route.group_id ? groupLabel(route.group_id) : '', 'form-control form-control-sm g4fr-route-group'); inp.placeholder='Pesquisar grupo por nome ou #id'; inp.setAttribute('list','g4fr-groups-datalist'); const hint=el('div','form-text'); hint.textContent=route.group_id ? ('Grupo ID: '+route.group_id) : 'Selecione um grupo';
+    function commit(){ const raw=inp.value.trim(); const id=resolveGroupId(raw); if(!raw){ route.group_id=0; inp.classList.remove('is-invalid'); hint.textContent='Selecione um grupo'; } else if(id>0){ route.group_id=id; inp.value=groupLabel(id); inp.classList.remove('is-invalid'); hint.textContent='Grupo ID: '+id; } else { route.group_id=0; inp.classList.add('is-invalid'); hint.textContent='Escolha um grupo da lista'; } syncRoutes(); }
+    inp.addEventListener('change',commit); inp.addEventListener('blur',commit); wrap.appendChild(inp); wrap.appendChild(hint); return wrap;
+  }
+  function renderRoutes(){
+    const body=document.querySelector('#g4fr-routes-table tbody'); if(!body) return; body.innerHTML=''; const opts=apiProfileOptions();
+    if(!routes.length){ const tr=document.createElement('tr'); const c=td(document.createTextNode('Nenhuma rota configurada. Permissões simples + perfil padrão serão usados.')); c.colSpan=6; c.className='text-muted'; tr.appendChild(c); body.appendChild(tr); return; }
+    routes.forEach((r,idx)=>{ if(!r.id) r.id=unique('route'); const tr=document.createElement('tr'); const group=routeGroupControl(r,idx); const profile=select(opts,r.profile_id||'__default__'); profile.addEventListener('change',()=>{r.profile_id=profile.value; syncRoutes();}); const prio=input(r.priority||'100','form-control form-control-sm','number'); prio.min='0'; prio.addEventListener('input',()=>{r.priority=prio.value; syncRoutes();}); const children=checkbox(r.include_children!==false && r.include_children!==0 && r.include_children!=='0'); children.addEventListener('change',()=>{r.include_children=children.checked; syncRoutes();}); const active=checkbox(r.enabled!==false && r.enabled!==0 && r.enabled!=='0'); active.addEventListener('change',()=>{r.enabled=active.checked; syncRoutes();}); const remove=el('button','btn btn-outline-danger btn-sm'); remove.type='button'; remove.textContent='Remover'; remove.disabled=disabled; remove.addEventListener('click',()=>{routes.splice(idx,1); syncRoutes(); renderRoutes();}); [group,profile,prio,children,active,remove].forEach(ch=>tr.appendChild(td(ch))); body.appendChild(tr); }); syncRoutes();
+  }
+  const addProfile=document.getElementById('g4fr-add-profile'); if(addProfile) addProfile.addEventListener('click',()=>{ profiles.push({id:unique('profile'),name:'Novo perfil',base_url:'',auth_mode:'user_token',app_token:'',user_token:'',session_token:'',timeout_ms:'60000',verify_tls:true,enabled:true}); syncProfiles(); renderProfiles(); });
+  const addRoute=document.getElementById('g4fr-add-route'); if(addRoute) addRoute.addEventListener('click',()=>{ routes.push({id:unique('route'),group_id:0,profile_id:'__default__',priority:100,include_children:true,enabled:true}); syncRoutes(); renderRoutes(); });
+  const authMode=document.getElementById('g4fr_api_auth_mode');
+  function refreshAuthFields(){ const mode=authMode ? authMode.value : 'user_token'; document.querySelectorAll('.g4fr-token-row[data-auth-show]').forEach(row=>{ const show=(row.getAttribute('data-auth-show')||'').split(/\s+/).includes(mode); row.hidden=!show; }); }
+  if(authMode) authMode.addEventListener('change',refreshAuthFields); refreshAuthFields();
+  const defName=document.querySelector('[name="default_profile_name"]'); if(defName) defName.addEventListener('input',renderRoutes);
+  const form=document.forms.g4freports_config_form; if(form) form.addEventListener('submit',()=>{ if(allowedGroups) allowedGroups.sync(); if(allowedProfiles) allowedProfiles.sync(); syncProfiles(); syncRoutes(); });
+  syncProfiles(); syncRoutes(); renderProfiles(); renderRoutes();
+})();
+</script>

@@ -1,0 +1,12 @@
+{
+  "name": "g4f/g4freports",
+  "description": "API-first GLPI report generator with DOCX export.",
+  "type": "glpi-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "GlpiPlugin\\G4freports\\": "src/"
+    }
+  },
+  "require": {}
+}
